@@ -1,0 +1,110 @@
+*{
+    user-select: none;
+}
+.nav{
+    position: relative;
+    height: 15vh;
+    width: 100vw;
+    border-bottom: #1B1B1B 2px solid;
+    top: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    font-family: Kiona;
+    font-size: 1.5em;
+    position: relative;
+    left: 5vw;
+    font-weight: bolder;
+    text-shadow: black 0px 0px 40px;
+    cursor: pointer;
+}
+.logo:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0%;
+    width: 65%;
+    border-bottom: 3px solid #4B4B4B;
+}
+.nav-button{
+    background-image: url(../open-menu.png);
+    background-size: contain;
+    height: 35px;
+    background-repeat: no-repeat;
+    position: relative;
+    right: -2vw;
+    /* margin-left: 15px; */
+    width: 40px;
+    cursor: pointer;
+}
+.elements{
+    font-family: Apercu, serif;
+    font-size: 1.4em;
+    padding: 0 2vw;
+    color: #494949;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    width: 100vw;
+    height: 85vh;
+    font-family: Apercu;
+}
+#about-container{
+    background: transparent linear-gradient(115deg, #1B1B1B 0%, #101010 100%) 0% 0% no-repeat padding-box;
+    height: 100%;
+    width: 100vw;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+}
+.image{
+    display: block;
+    width: 50vw;
+    background-image: url("../kindpng_3631544.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.text-container{
+    display: block;
+    width: 50vw;
+    color: white;
+}
+h1{
+    text-align: center;
+    font-size: 4em;
+    font-weight: lighter;
+}
+p{
+    font-size: 1.5vw;
+    text-align: center;
+    font-weight: 100;
+    padding: 0px 4.7vw;
+}
+.subscribe{
+    position: relative;
+    text-align: center;
+    display: block;
+    font-size: 1.5em;
+    padding: 25px;
+    background: #151515 0% 0% no-repeat padding-box;
+    box-shadow: 3px 5px 3px #FFFFFF29;
+    width: 200px;
+    border-radius: 500px;
+    margin: 0 auto;
+    margin-top: 5vh;
+}
+body{
+    background: transparent linear-gradient(115deg, #1B1B1B 0%, #101010 100%) 0% 0% no-repeat padding-box;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
