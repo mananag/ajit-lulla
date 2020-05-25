@@ -43,7 +43,8 @@
 .elements{
     font-family: Apercu, serif;
     font-size: 1.4em;
-    padding: 0 2vw;
+    margin: 0 2vw;
+    padding: 0 0 ;
     color: #494949;
     cursor: pointer;
 }
