@@ -2,7 +2,7 @@
     background: transparent linear-gradient(115deg, #1B1B1B 0%, #101010 100%) 0% 0% no-repeat padding-box;
     height: 100%;
     width: 100vw;
-    overflow: hidden;
+    overflow: auto;
     box-sizing: border-box;
     position: relative;
     z-index: 10;
