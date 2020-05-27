@@ -11,12 +11,11 @@
 }
 #experience-container h1{
     color: white;
-    font-family: Apercu;
+    font-family: ApercuLight;
     font-weight: lighter;
     margin-block-end: 0;
 }
 .tile{
-    width: 30%;
     margin: 4vh 0;
     display: flex;
     flex-direction: column;
@@ -24,7 +23,7 @@
 }
 .grid{
     display: flex;
-    font-family: Apercu;
+    font-family: ApercuLight;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 5vh 7vw;
@@ -50,4 +49,47 @@
     /* width: 83%; */
     font-size: 1.25em;
     border-radius: 0px 0px 40px 40px;
+}
+.card{
+    width: 30%;
+}
+@media all and (max-width: 1000px) {
+    #experience-container h1{
+        font-size: 7em;
+    }
+    .card{
+        width: 100vw;
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0vw;
+    }
+    .grid{
+        display: block;
+    }
+    .tile-title{
+        font-size: 3em;
+        line-height: 2;
+        color: white;
+    }
+    .tile-body{
+        font-size: 2.5em;
+        line-height: 1.5;
+        border-radius: 0px 0px 125px 125px;
+        color: black;
+        height: auto;
+    }
+    .tile{
+        margin: 4vh 14vw;
+        height: 32vh;
+    }
+    .grid .flickity-page-dots{
+        left:0;
+    }
+    .grid .flickity-page-dots .dot.is-selected{
+        background-color: white;
+    }
+    .grid .flickity-page-dots .dot{
+        border-color: white;
+    }
 }

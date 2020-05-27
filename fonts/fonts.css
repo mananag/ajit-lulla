@@ -6,3 +6,7 @@
     font-family: 'Apercu';
     src: url("Apercu Pro Medium.otf");
 }
+@font-face {
+    font-family: 'ApercuLight';
+    src: url("ApercuLight.ttf");
+}

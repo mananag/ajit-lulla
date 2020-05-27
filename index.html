@@ -6,17 +6,24 @@
     <link rel="stylesheet" type="text/css" href="css/experiences.css">
     <link rel="stylesheet" type="text/css" href="./css/resources.css">
     <link rel="stylesheet" type="text/css" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="css/flickity.css" media="screen">
     <title>Ajit Lulla</title>
 </head>
 <body>
     <div id="about-container">
-    <div class="nav" style="position: fixed; z-index:100">
+    <div class="nav" style="position: fixed; z-index:20">
         <div class="logo" onclick="openPage('about')">AJIT LULLA</div>
         <div class="elements" style="margin-left: 42vw"  onclick="openPage('about')">About</div>
         <div class="elements" onclick="openPage('experience')">Experiences</div>
         <div class="elements">Coaching</div>
         <div class="elements " onclick="openPage('resource')">Resources</div>
-        <div class="nav-button"></div>
+        <div class="nav-button" onclick="openMenu()"></div>
+        <div id="nav-menu">
+            <div class="elements"   onclick="openPage('about')">About</div>
+            <div class="elements" onclick="openPage('experience')">Experiences</div>
+            <div class="elements">Coaching</div>
+            <div class="elements " onclick="openPage('resource')">Resources</div>
+        </div>
     </div>
     <div class="nav"></div>
     <div class="container">
@@ -39,7 +46,7 @@
     </div>
     <div id="resource-container">
         <div class="nav"></div>
-        <div class="container" style="flex-direction: column">
+        <div class="container" style="flex-direction: column" >
             <div class="header">
                 <h1>Resources</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -50,10 +57,10 @@
                     desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                 </p>
             </div>
-            <div class="footer">
-                <div class="column">
+            <div class="footer desk" >
+                <div class="column left">
                     <h2>Class 11</h2>
-                    <p style="text-align: left">
+                    <p class="left">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                         industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
                         and scrambled it to make a type specimen book. It has survived not only five centuries, but also
@@ -62,7 +69,42 @@
                         desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                     </p>
                 </div>
-                <div class="column" style="text-align: center">
+                <div class="column center">
+                    <h2>Sample Paper</h2>
+                    <p class="center">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                        the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                        1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                        desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
+                <div class="column right">
+                    <h2>Class 12</h2>
+                    <p class="right">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                        the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                        1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                        desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
+            </div>
+            <div class="footer mobile js-flickity" >
+                <div class="column left">
+                    <h2>Class 11</h2>
+                    <p >
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                        the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                        1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                        desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
+                <div class="column center">
                     <h2>Sample Paper</h2>
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -73,9 +115,9 @@
                         desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                     </p>
                 </div>
-                <div class="column" style="text-align: right">
+                <div class="column right">
                     <h2>Class 12</h2>
-                    <p style="text-align: right">
+                    <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                         industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
                         and scrambled it to make a type specimen book. It has survived not only five centuries, but also
@@ -92,57 +134,120 @@
         <h1>
             Experiences
         </h1>
-        <div class="grid">
-            <div class="tile">
-                <div class="tile-title">Event Manager</div>
-                <div class="tile-body">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book.
+        <div class="grid desk">
+            <div class="card">
+                <div class="tile">
+                    <div class="tile-title">Event Manager</div>
+                    <div class="tile-body">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </div>
+                </div>
+                <div class="tile">
+                    <div class="tile-title">Event Manager</div>
+                    <div class="tile-body">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </div>
                 </div>
             </div>
-            <div class="tile">
-                <div class="tile-title">Event Manager</div>
-                <div class="tile-body">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book.
+            <div class="card">
+                <div class="tile">
+                    <div class="tile-title">Event Manager</div>
+                    <div class="tile-body">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </div>
+                </div>
+                <div class="tile">
+                    <div class="tile-title">Event Manager</div>
+                    <div class="tile-body">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </div>
                 </div>
             </div>
-            <div class="tile">
-                <div class="tile-title">Event Manager</div>
-                <div class="tile-body">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book.
+            <div class="card">
+                <div class="tile">
+                    <div class="tile-title">Event Manager</div>
+                    <div class="tile-body">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </div>
+                </div>
+                <div class="tile">
+                    <div class="tile-title">Event Manager</div>
+                    <div class="tile-body">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </div>
                 </div>
             </div>
-            <div class="tile">
-                <div class="tile-title">Event Manager</div>
-                <div class="tile-body">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book.
+        </div>
+        <div class="grid mobile js-flickity">
+            <div class="card">
+                <div class="tile">
+                    <div class="tile-title">Event Manager</div>
+                    <div class="tile-body">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </div>
+                </div>
+                <div class="tile">
+                    <div class="tile-title">Event Manager</div>
+                    <div class="tile-body">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </div>
                 </div>
             </div>
-            <div class="tile">
-                <div class="tile-title">Event Manager</div>
-                <div class="tile-body">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book.
+            <div class="card">
+                <div class="tile">
+                    <div class="tile-title">Event Manager</div>
+                    <div class="tile-body">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </div>
+                </div>
+                <div class="tile">
+                    <div class="tile-title">Event Manager</div>
+                    <div class="tile-body">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </div>
                 </div>
             </div>
-            <div class="tile">
-                <div class="tile-title">Event Manager</div>
-                <div class="tile-body">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book.
+            <div class="card">
+                <div class="tile">
+                    <div class="tile-title">Event Manager</div>
+                    <div class="tile-body">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </div>
+                </div>
+                <div class="tile">
+                    <div class="tile-title">Event Manager</div>
+                    <div class="tile-body">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
 <script src="main.js">  </script>
+<script src="flickity.pkgd.min.js"></script>
 </html>

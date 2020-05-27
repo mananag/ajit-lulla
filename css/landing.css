@@ -43,19 +43,38 @@
     width: 40px;
     cursor: pointer;
 }
+#nav-menu{
+    height: 100vh;
+    width: 100vw;
+    background: transparent linear-gradient(115deg, #1B1B1B 0%, #101010 100%) 0% 0% no-repeat padding-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20vh 0;
+}
 .elements{
     font-family: Apercu, serif;
     font-size: 1.4em;
     margin: 0 2vw;
     padding: 0 0 ;
-    color: #494949;
+    color: black;
     cursor: pointer;
+}
+#nav-menu .elements{
+    font-size: 2em;
+    color: white;
 }
 .container{
     display: flex;
     width: 100vw;
     height: 85vh;
-    font-family: Apercu;
+    font-family: ApercuLight;
 }
 #about-container{
     background: transparent linear-gradient(115deg, #1B1B1B 0%, #101010 100%) 0% 0% no-repeat padding-box;
@@ -103,6 +122,47 @@ p{
     border-radius: 500px;
     margin: 0 auto;
     margin-top: 5vh;
+}
+@media all and (max-width: 1000px){
+    .nav .elements{
+        display: none;
+    }
+    #nav-menu .elements{
+        display: block;
+    }
+    .logo{
+        font-size: 3em;
+    }
+    .nav{
+        height: 6vh;
+    }
+    .container{
+        flex-direction: column-reverse;
+        height: auto;
+        width: 100vw;
+    }
+    .image{
+        display: block;
+        min-width: 100vw;
+        min-height: 55vh;
+    }
+    .text-container{
+        width: 100vw;
+        font-size: 2em;
+    }
+    .text-container p{
+        height: 37vh;
+        font-size: 1.25em;
+        overflow: hidden;
+        padding: 0 65px;
+        line-height: 1.5;
+    }
+    .subscribe{
+        display: none;
+    }
+    #nav-menu{
+        font-size: 2em;
+    }
 }
 body{
     background: transparent linear-gradient(115deg, #1B1B1B 0%, #101010 100%) 0% 0% no-repeat padding-box;
